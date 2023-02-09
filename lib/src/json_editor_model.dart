@@ -202,7 +202,7 @@ class JsonElement {
     } else if (valueType == JsonElementValueType.string) {
       jsonString += '"${value.toString()}"';
     } else if (valueType == JsonElementValueType.numeric) {
-      jsonString += (value as num).format();
+      jsonString += value.toString();
     } else if (value != null) {
       jsonString += value.toString();
     }
