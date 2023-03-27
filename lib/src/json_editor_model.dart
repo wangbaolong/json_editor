@@ -47,6 +47,9 @@ class JsonElement {
           (tokens.lexeme == 'true' || tokens.lexeme == 'false')) {
         value = tokens.lexeme == 'true';
         valueType = JsonElementValueType.bool;
+      } else if (tokens.type == TokenType.IDENTIFIER && tokens.lexeme == 'null') {
+        value = 'null';
+        valueType = JsonElementValueType.numeric;
       } else if (tokens.lexeme == '{') {
         value = [];
         valueType = JsonElementValueType.map;

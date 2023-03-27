@@ -13,6 +13,7 @@ const int COLON_TOKEN = $COLON;
 const int COMMA_TOKEN = $COMMA;
 const int BAD_INPUT_TOKEN = $X;
 const int RECOVERY_TOKEN = $r;
+const int NULL_TOKEN = $null;
 
 const int OPEN_CURLY_BRACKET_TOKEN = $OPEN_CURLY_BRACKET;
 const int OPEN_SQUARE_BRACKET_TOKEN = $OPEN_SQUARE_BRACKET;

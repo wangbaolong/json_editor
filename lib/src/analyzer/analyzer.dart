@@ -154,8 +154,14 @@ class JsonAnalyzer {
       token.type == TokenType.INT ||
       token.type == TokenType.DOUBLE ||
       token.type == TokenType.STRING ||
-      (token.type == TokenType.IDENTIFIER &&
-          ('true' == token.toString() || 'false' == token.toString()));
+      (
+          token.type == TokenType.IDENTIFIER &&
+          (
+              'true' == token.toString() ||
+              'false' == token.toString() ||
+              'null' == token.toString()
+          )
+      );
 
   bool _isObjectStartToken(Token token) => token.lexeme == '{';
 

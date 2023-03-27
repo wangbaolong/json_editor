@@ -7,7 +7,7 @@ void main() {
   group('Lexer', () {
     test('Tokens', () {
       var tokens = Lexer().scan(
-          '{"name": "you", "age": 23, "child": true, "obj": { "serialNo": [ 1, 2, 3]}}');
+          '{"test":null,"name": "you", "age": 23, "child": true, "obj": { "serialNo": [ 1, 2, 3]}}');
       var advanceToken = tokens.next!;
       while (advanceToken.lexeme != '{') {
         advanceToken = advanceToken.next!;

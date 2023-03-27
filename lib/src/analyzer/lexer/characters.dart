@@ -161,6 +161,7 @@ const int $w = 119;
 const int $x = 120;
 const int $y = 121;
 const int $z = 122;
+const int $null = 9999;
 
 /// "{"
 const int $OPEN_CURLY_BRACKET = 123;
@@ -175,6 +176,7 @@ const int $CLOSE_CURLY_BRACKET = 125;
 const int $TILDE = 126;
 const int $DEL = 127;
 const int $NBSP = 160;
+
 const int $LS = 0x2028;
 const int $PS = 0x2029;
 

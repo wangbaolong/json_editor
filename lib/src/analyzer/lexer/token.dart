@@ -269,4 +269,7 @@ class TokenType {
 
   static const TokenType PERIOD =
       TokenType(lexeme: '.', name: 'PERIOD', kind: PERIOD_TOKEN);
+
+  static const TokenType NULL =
+    TokenType(lexeme: 'null', name: 'NULL', kind: NULL_TOKEN);
 }
